@@ -1200,6 +1200,7 @@ section[id] { scroll-margin-top: 64px; }
   justify-content: center;
   min-height: 176px;
   padding: 8px;
+  overflow: hidden;
 }
 
 .partners__logo {
