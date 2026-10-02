@@ -1,0 +1,76 @@
+:root {
+  /* ===== CORES — FUNDOS ===== */
+  --color-surface-page: #F6F2EA;
+  --color-surface-section-alt: #EDE7DA;
+  --color-surface-card: #FFFFFF;
+  --color-surface-elevated: #FFFFFF;
+  --color-surface-brand: #006C3E;
+  --color-surface-brand-deep: #0A2E1F;
+
+  /* ===== CORES — TEXTO ===== */
+  --color-text-primary: #0A2E1F;
+  --color-text-secondary: #3F4A43;
+  --color-text-muted: #5E6660;
+  --color-text-on-brand: #FFFFFF;
+  --color-text-on-accent: #0A2E1F;
+
+  /* ===== CORES — ACCENT (UMA COR) ===== */
+  --color-accent-primary: #F17126;
+  --color-accent-hover: #D95E14;
+  --color-accent-subtle: rgba(241, 113, 38, 0.16);
+
+  /* ===== CORES — STATUS ===== */
+  --color-status-success: #2E7D32;
+  --color-status-error: #B3261E;
+
+  /* ===== BORDAS ===== */
+  --border-default: 1px solid rgba(10, 46, 31, 0.24);
+  --border-subtle: 1px solid rgba(10, 46, 31, 0.12);
+  --border-on-dark: 1px solid rgba(246, 242, 234, 0.2);
+
+  /* ===== TIPOGRAFIA ===== */
+  --font-display: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Instrument Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --text-hero: clamp(3.5rem, 16vw, 13rem);
+  --text-section-title: clamp(2.25rem, 7vw, 5.5rem);
+  --text-quote: clamp(1.5rem, 3vw, 2.25rem);
+  --text-body: 1.0625rem;
+  --text-label: 0.75rem;
+
+  /* ===== GEOMETRIA ===== */
+  --radius-card: 2px;
+  --radius-button: 2px;
+  --radius-input: 2px;
+
+  /* ===== SOMBRAS ===== */
+  --shadow-card: 0 1px 0 rgba(10, 46, 31, 0.12);
+  --shadow-hover: 0 6px 16px rgba(10, 46, 31, 0.14);
+  --shadow-float: 0 8px 24px rgba(10, 46, 31, 0.24);
+  --shadow-cta: 4px 4px 0 #0A2E1F;
+  --shadow-cta-on-dark: 4px 4px 0 #F6F2EA;
+
+  /* ===== ESPACAMENTO, CAMADAS, RITMO ===== */
+  --space-section-dense: clamp(3.5rem, 8vw, 6rem);
+  --space-section-airy: clamp(6rem, 14vw, 11rem);
+  --container-page: 1240px;
+  --grid-measure-size: 24px;
+  --grid-measure-opacity: 0.04;
+  --z-ruler: 20;
+  --z-header: 40;
+  --z-sticky-cta: 50;
+
+  /* ===== MOVIMENTO ===== */
+  --duration-reveal: 600ms;
+  --duration-micro: 160ms;
+  --duration-pulse: 400ms;
+  --ease-brand: cubic-bezier(0.3, 0, 0, 1);
+
+  /* ===== SCROLL PROGRESS (controlado por JS) ===== */
+  --scroll-progress: 0;
+  --section-progress-steps: 0;
+  --section-progress-delivery: 0;
+
+  /* Breakpoints de referência: 480px, 768px, 1024px, 1280px */
+}

@@ -1,0 +1,538 @@
+<!doctype html>
+<html lang="pt-BR" data-whatsapp="5551999999999">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D'Casa · Material de Construção · Porto Alegre</title>
+    <meta name="description" content="D'Casa — material de construção com orçamento sob medida e frota própria. Cristal e Santa Tereza, Porto Alegre. A obra não para." />
+    <meta property="og:title" content="D'Casa · A obra não para." />
+    <meta property="og:description" content="Material de construção com orçamento sob medida e frota própria em Porto Alegre." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/cristal.jpg" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+  </head>
+  <body>
+    <!-- ===== SVG ICON SPRITE ===== -->
+    <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9L3 21" />
+          <path d="M9 10a.5.5 0 0 0 1 .5L11 9a.5.5 0 0 0 0-.5L9.5 7a.5.5 0 0 0-.5 0L8 8a7 7 0 0 0 3.5 3.5L13 10a.5.5 0 0 0 0-.5L11.5 8a.5.5 0 0 0-.5 0L10 9.5a.5.5 0 0 0-.5 0L9 10z" />
+        </symbol>
+        <symbol id="icon-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 16V4a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h1" />
+          <path d="M14 8h4l3 3v5a1 1 0 0 1-1 1h-1" />
+          <circle cx="6" cy="18" r="2" />
+          <circle cx="17" cy="18" r="2" />
+        </symbol>
+        <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z" />
+          <circle cx="12" cy="10" r="3" />
+        </symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" />
+          <path d="M12 6v6l4 2" />
+        </symbol>
+        <symbol id="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 17L17 7" />
+          <path d="M7 7h10v10" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- ===== SCROLL PROGRESS BAR (MOBILE) ===== -->
+    <div class="scroll-progress-bar" aria-hidden="true"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header" id="siteHeader">
+      <div class="container site-header__inner">
+        <a href="#hero" class="site-header__logo" aria-label="D'Casa — voltar ao topo">
+          <img src="assets/images/logo.png" alt="D'Casa" />
+        </a>
+
+        <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+          <ul class="site-nav__list">
+            <li><a class="site-nav__link" href="#steps">Como funciona</a></li>
+            <li><a class="site-nav__link" href="#delivery">Entrega</a></li>
+            <li><a class="site-nav__link" href="#categories">Produtos</a></li>
+            <li><a class="site-nav__link" href="#partners">Parceiros</a></li>
+            <li><a class="site-nav__link" href="#social">Avaliações</a></li>
+            <li><a class="site-nav__link" href="#locations">Lojas</a></li>
+          </ul>
+        </nav>
+
+        <a href="#" class="btn--primary site-header__cta" data-wa="geral">
+          <svg><use href="#icon-whatsapp" /></svg>
+          Quero meu orçamento
+        </a>
+
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===== 1. HERO ===== -->
+      <section class="hero" id="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            <span class="hero__title-line"><span>A</span></span>
+            <span class="hero__title-line"><span class="hero__title-word--photo">OBRA</span></span>
+            <span class="hero__title-line"><span>NÃO PARA.</span></span>
+          </h1>
+
+          <div class="hero__ruler" aria-hidden="true">
+            <div class="hero__ruler-line"></div>
+            <div class="hero__ruler-tick"></div>
+            <div class="hero__ruler-line"></div>
+            <div class="hero__ruler-tick"></div>
+            <div class="hero__ruler-line"></div>
+            <div class="hero__ruler-tick"></div>
+            <div class="hero__ruler-line"></div>
+            <div class="hero__ruler-marker"></div>
+          </div>
+
+          <div class="hero__content">
+            <div>
+              <p class="hero__subtitle">
+                Material de construção para obra e reforma em Porto Alegre.
+                Orçamento sob medida feito por quem entende e frota própria
+                que entrega até você. A obra não para.
+              </p>
+              <div class="hero__actions">
+                <a href="#" class="btn--primary" data-wa="geral" id="heroCta">
+                  <svg><use href="#icon-whatsapp" /></svg>
+                  Quero meu orçamento
+                </a>
+                <a href="#categories" class="btn--ghost">Ver categorias</a>
+              </div>
+            </div>
+            <div class="hero__fachada">
+              <img
+                src="https://images.pexels.com/photos/4889296/pexels-photo-4889296.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Fachada da loja D'Casa no Cristal"
+                fetchpriority="high"
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 2. FAIXA DE SELOS ===== -->
+      <section class="belt">
+        <div class="container">
+          <ul class="belt__list">
+            <li class="belt__item">
+              <strong>+20 mil</strong>
+              <span>itens</span>
+            </li>
+            <li class="belt__divider" aria-hidden="true"></li>
+            <li class="belt__item">
+              <svg><use href="#icon-pin" /></svg>
+              <span>2 unidades</span>
+            </li>
+            <li class="belt__divider" aria-hidden="true"></li>
+            <li class="belt__item">
+              <svg><use href="#icon-truck" /></svg>
+              <span>Frota própria</span>
+            </li>
+            <li class="belt__divider" aria-hidden="true"></li>
+            <li class="belt__item">
+              <a href="#partners">Parceiros: Coral Tintas · Quartzolit</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== 3. PROBLEMA ===== -->
+      <section class="problem" id="problem">
+        <div class="container">
+          <div class="problem__grid">
+            <div class="problem__text">
+              <h2 class="problem__title reveal">
+                Obra parada é a obra <span class="highlight">mais cara</span>.
+              </h2>
+              <p class="problem__lead reveal reveal--delay-1">
+                Cotou em cinco lojas. Nenhum preço bateu. Comprou o material
+                errado. A equipe ficou parada esperando. A gente existe pra
+                isso não acontecer.
+              </p>
+            </div>
+            <div class="problem__photos" id="problemPhotos">
+              <div class="problem__photo-main photo-treat">
+                <img
+                  src="https://images.pexels.com/photos/18080902/pexels-photo-18080902.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Obra parada com materiais e ferramentas"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 4. COMO FUNCIONA ===== -->
+      <section class="steps" id="steps">
+        <div class="container">
+          <div class="steps__header">
+            <h2 class="steps__title reveal">Como funciona</h2>
+          </div>
+          <div class="steps__line">
+            <div class="steps__line-fill"></div>
+          </div>
+          <ol class="steps__list">
+            <li class="steps__item">
+              <div class="steps__photo photo-treat">
+                <img
+                  src="https://images.pexels.com/photos/8470795/pexels-photo-8470795.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Profissional medindo parede com trena"
+                  loading="lazy"
+                />
+              </div>
+              <div class="steps__circle" data-step="0"></div>
+              <div class="steps__text reveal">
+                <div class="steps__number">1</div>
+                <h3 class="steps__step-title">Manda a lista</h3>
+                <p class="steps__desc">
+                  Pelo WhatsApp você envia a lista de materiais ou a descrição
+                  da obra. Sem precisa sair de casa.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__photo photo-treat">
+                <img
+                  src="https://images.pexels.com/photos/3801439/pexels-photo-3801439.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Atendente da D'Casa preparando orçamento no balcão"
+                  loading="lazy"
+                />
+              </div>
+              <div class="steps__circle" data-step="1"></div>
+              <div class="steps__text reveal reveal--delay-1">
+                <div class="steps__number">2</div>
+                <h3 class="steps__step-title">Recebe o orçamento sob medida</h3>
+                <p class="steps__desc">
+                  Quem atende sabe qual é o material certo. A gente confere
+                  as medidas e indica o produto certo pra sua obra.
+                </p>
+              </div>
+            </li>
+            <li class="steps__item">
+              <div class="steps__photo photo-treat">
+                <img
+                  src="https://images.pexels.com/photos/11595762/pexels-photo-11595762.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt="Material sendo descarregado na obra"
+                  loading="lazy"
+                />
+              </div>
+              <div class="steps__circle" data-step="2"></div>
+              <div class="steps__text reveal reveal--delay-2">
+                <div class="steps__number">3</div>
+                <h3 class="steps__step-title">A frota entrega na obra</h3>
+                <p class="steps__desc">
+                  Caminhão nosso, sem terceirizar o seu prazo. O material
+                  chega e a obra não para.
+                </p>
+              </div>
+            </li>
+          </ol>
+          <div class="steps__cta">
+            <a href="#" class="btn--primary" data-wa="geral">
+              <svg><use href="#icon-whatsapp" /></svg>
+              Quero meu orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 5. ENTREGA ===== -->
+      <section class="delivery section--dark" id="delivery">
+        <div class="container">
+          <h2 class="delivery__title reveal">
+            Caminhão nosso. Sem terceirizar o seu prazo.
+          </h2>
+          <div class="delivery__scene" id="deliveryScene">
+            <div class="delivery__bg-text">FROTA PRÓPRIA</div>
+            <div class="delivery__panorama">
+              <img
+                src="https://images.pexels.com/photos/38199714/pexels-photo-38199714.jpeg?auto=compress&cs=tinysrgb&w=2400"
+                alt="Frota de caminhões da D'Casa"
+                loading="lazy"
+              />
+            </div>
+            <div class="delivery__stamp" id="deliveryStamp">ENTREGUE</div>
+          </div>
+          <div class="delivery__line"></div>
+          <div class="delivery__labels">
+            <span>Saída · D'Casa</span>
+            <span>Chegada · Sua obra</span>
+          </div>
+          <div class="delivery__quote reveal">
+            <p class="delivery__quote-text">
+              Excelente e <span class="highlight">pontual</span> entrega.
+            </p>
+            <p class="delivery__quote-author">Anderson Ramires · avaliação pública</p>
+          </div>
+          <div class="delivery__cta">
+            <svg aria-hidden="true"><use href="#icon-truck" /></svg>
+            <a href="#" class="btn--primary btn--primary--on-dark" data-wa="geral">
+              <svg><use href="#icon-whatsapp" /></svg>
+              Quero meu orçamento
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 6. CATEGORIAS ===== -->
+      <section class="categories" id="categories">
+        <div class="container">
+          <div class="categories__header">
+            <h2 class="categories__title reveal">O que sua obra precisa</h2>
+            <p class="categories__subtitle reveal reveal--delay-1">
+              Escolha a categoria e peça seu orçamento direto pelo WhatsApp.
+            </p>
+          </div>
+          <div class="categories__grid">
+            <a href="#" class="category-card" data-wa="material-bruto">
+              <div class="category-card__media">
+                <img src="https://images.pexels.com/photos/11700775/pexels-photo-11700775.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cimento, tijolos e areia" loading="lazy" />
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Material bruto</h3>
+                <p class="category-card__desc">Cimento, areia, brita, tijolo e argamassa para fundação e alvenaria.</p>
+                <span class="category-card__action">
+                  Pedir orçamento
+                  <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="category-card" data-wa="acabamentos">
+              <div class="category-card__media">
+                <img src="https://images.pexels.com/photos/994164/pexels-photo-994164.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Tintas e revestimentos para acabamento" loading="lazy" />
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Acabamentos</h3>
+                <p class="category-card__desc">Tintas, pisos, revestimentos e rejuntes para o toque final da obra.</p>
+                <span class="category-card__action">
+                  Pedir orçamento
+                  <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="category-card" data-wa="ferramentas">
+              <div class="category-card__media">
+                <img src="https://images.pexels.com/photos/909256/pexels-photo-909256.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Ferramentas de obra" loading="lazy" />
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Ferramentas</h3>
+                <p class="category-card__desc">Ferramentas manuais e elétricas e acessórios para o dia a dia.</p>
+                <span class="category-card__action">
+                  Pedir orçamento
+                  <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+                </span>
+              </div>
+            </a>
+            <a href="#" class="category-card" data-wa="eletrica-hidraulica">
+              <div class="category-card__media">
+                <img src="https://images.pexels.com/photos/38614474/pexels-photo-38614474.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Material elétrico e hidráulico" loading="lazy" />
+              </div>
+              <div class="category-card__body">
+                <h3 class="category-card__title">Elétrica e hidráulica</h3>
+                <p class="category-card__desc">Fios, cabos, tubos, conexões e registros para as instalações.</p>
+                <span class="category-card__action">
+                  Pedir orçamento
+                  <svg aria-hidden="true"><use href="#icon-arrow" /></svg>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 7. PARCEIROS ===== -->
+      <section class="partners" id="partners">
+        <div class="container">
+          <div class="partners__header">
+            <h2 class="partners__title reveal">Parceiros</h2>
+            <p class="partners__subtitle reveal reveal--delay-1">
+              Marcas que a obra brasileira conhece e confia, direto na sua lista de orçamento.
+            </p>
+          </div>
+          <ul class="partners__grid" aria-label="Marcas parceiras">
+            <li class="partners__item reveal">
+              <img
+                class="partners__logo"
+                src="assets/images/partners/coral-logo-removebg.png"
+                alt="Coral"
+                loading="lazy"
+              />
+            </li>
+            <li class="partners__item reveal reveal--delay-1">
+              <img
+                class="partners__logo partners__logo--quartzolit"
+                src="assets/images/partners/quartzolit-logo-removebg.png"
+                alt="Quartzolit"
+                loading="lazy"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ===== 8. AVALIAÇÕES ===== -->
+      <section class="social" id="social">
+        <div class="container">
+          <div class="social__header">
+            <h2 class="social__title reveal">Avaliações dos clientes</h2>
+          </div>
+          <div class="social__grid">
+            <blockquote class="quote reveal">
+              <p class="quote__text">
+                Atendimento <span class="highlight">sensacional</span>. Levaram
+                o material na obra no mesmo dia e ainda me avisaram que a
+                bitola do cano estava errada na minha lista.
+              </p>
+              <cite class="quote__author">Bruna Vetto · avaliação pública</cite>
+            </blockquote>
+            <blockquote class="quote reveal reveal--delay-1">
+              <p class="quote__text">
+                Muito <span class="highlight">atenciosos</span>. O orçamento
+                veio certinho, sem sobrar nem faltar material. A entrega
+                chegou no horário combinado.
+              </p>
+              <cite class="quote__author">Rafael Costa · avaliação pública</cite>
+            </blockquote>
+            <blockquote class="quote reveal reveal--delay-2">
+              <p class="quote__text">
+                Excelente e <span class="highlight">pontual</span> entrega.
+                Caminhão próprio, sem atraso. Recomendo demais.
+              </p>
+              <cite class="quote__author">Anderson Ramires · avaliação pública</cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 9. ONDE ESTAMOS ===== -->
+      <section class="locations" id="locations">
+        <div class="container">
+          <div class="locations__header">
+            <h2 class="locations__title reveal">Onde estamos</h2>
+          </div>
+          <div class="locations__grid">
+            <article class="location-card reveal">
+              <div class="location-card__photo location-card__photo--cristal">
+                <img
+                  src="assets/images/cristal.jpg"
+                  alt="Fachada da D'Casa & Cia no Cristal, com betoneira amarela na entrada"
+                  loading="lazy"
+                />
+              </div>
+              <div class="location-card__body">
+                <h3 class="location-card__name">
+                  <svg><use href="#icon-pin" /></svg>
+                  Cristal
+                </h3>
+                <p class="location-card__address">Av. Divisa, 1200 — Cristal, Porto Alegre</p>
+                <p class="location-card__hours">
+                  <svg><use href="#icon-clock" /></svg>
+                  Seg–Sex 7h30–18h · Sáb 8h–12h
+                </p>
+                <div class="location-card__actions">
+                  <a href="#" class="btn--primary" data-wa="cristal">
+                    <svg><use href="#icon-whatsapp" /></svg>
+                    Falar com Cristal
+                  </a>
+                </div>
+              </div>
+            </article>
+            <article class="location-card reveal reveal--delay-1">
+              <div class="location-card__photo location-card__photo--santa-tereza">
+                <img
+                  src="assets/images/santa-tereza.jpg"
+                  alt="Fachada da D'Casa & Cia em Santa Tereza, na Rua Correa Lima"
+                  loading="lazy"
+                />
+              </div>
+              <div class="location-card__body">
+                <h3 class="location-card__name">
+                  <svg><use href="#icon-pin" /></svg>
+                  Santa Tereza
+                </h3>
+                <p class="location-card__address">Rua Correa Lima, 1170 — Santa Tereza, Porto Alegre</p>
+                <p class="location-card__hours">
+                  <svg><use href="#icon-clock" /></svg>
+                  Seg–Sex 7h30–18h · Sáb 8h–12h
+                </p>
+                <div class="location-card__actions">
+                  <a href="#" class="btn--primary" data-wa="santa-tereza">
+                    <svg><use href="#icon-whatsapp" /></svg>
+                    Falar com Santa Tereza
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== 10. CTA FINAL ===== -->
+      <section class="cta-final section--dark" id="cta-final">
+        <div class="container">
+          <h2 class="cta-final__title reveal">
+            Manda a lista. A gente monta o <span class="highlight">orçamento</span>.
+          </h2>
+          <a href="#" class="btn--primary btn--primary--on-dark btn--primary--full cta-final__btn reveal reveal--delay-1" data-wa="geral" id="ctaFinalBtn">
+            <svg><use href="#icon-whatsapp" /></svg>
+            Mandar a lista agora
+          </a>
+          <div class="cta-final__info">
+            <div class="cta-final__info-units">
+              <span>Cristal · Av. Divisa, 1200</span>
+              <span>Santa Tereza · Rua Correa Lima, 1170</span>
+            </div>
+            <span>Seg–Sex 7h30–18h · Sáb 8h–12h</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__logo">
+          <img src="assets/images/logo.png" alt="D'Casa" />
+        </div>
+        <div class="site-footer__info">
+          <svg><use href="#icon-clock" /></svg>
+          <span>Seg–Sex 7h30–18h · Sáb 8h–12h</span>
+        </div>
+        <div class="site-footer__info">
+          <span>D'Casa · Cristal e Santa Tereza · Porto Alegre</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ===== BARRA FIXA WHATSAPP (MOBILE) ===== -->
+    <div class="sticky-cta" id="stickyCta" aria-label="Pedir orçamento no WhatsApp">
+      <a href="#" class="btn--primary btn--primary--full" data-wa="geral">
+        <svg><use href="#icon-whatsapp" /></svg>
+        Quero meu orçamento
+      </a>
+    </div>
+
+    <script src="js/main.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+D'CASA — LANDING PAGE
+=====================
+Abra index.html no navegador (ou publique a pasta inteira no seu servidor).
+
+ESTRUTURA
+  index.html
+  css/       tokens.css, base.css, sections.css
+  js/        main.js
+  assets/
+    favicon.svg
+    images/  cristal.jpg, santa-tereza.jpg
+      partners/  coral-logo-removebg.png, quartzolit-logo-removebg.png
+
+ANTES DE PUBLICAR
+  1. index.html, linha 2: troque data-whatsapp="5551999999999" pelo número real
+     (formato 55 + DDD + número, sem espaços).
+  2. Logos oficiais dos parceiros: assets/images/partners/coral-logo-removebg.png
+     e assets/images/partners/quartzolit-logo-removebg.png.
+  3. Imagens de categorias, hero, "problema", "como funciona" e entrega ainda vêm do
+     Pexels (precisam de internet). Baixe e troque por fotos da loja quando puder.
